@@ -13,13 +13,16 @@ namespace School.Models
             CourseInstructors = new HashSet<CourseInstructor>();
             StudentGrades = new HashSet<StudentGrade>();
         }
-
+        [Display(Name = "ID")]
         public int PersonID { get; set; }
+        [Display(Name = "Apellido")]
         [Required()]
         public string LastName { get; set; }
+        [Display(Name = "Nombre")]
         [Required()]
         public string FirstName { get; set; }
         public DateTime? HireDate { get; set; }
+        [Display(Name = "Fecha de alta")]
         public DateTime? EnrollmentDate { get; set; }
 
         public virtual OfficeAssignment OfficeAssignment { get; set; }

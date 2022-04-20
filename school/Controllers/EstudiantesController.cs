@@ -33,7 +33,12 @@ namespace School.Controllers
             return View(student);
         }
 
+        public IActionResult Nuevo() {
+            return View("Ficha", new Person());
+        }
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Nuevo(Person student) {
             if(ModelState.IsValid)
             {

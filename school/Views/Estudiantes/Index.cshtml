@@ -29,7 +29,7 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td><a asp-controller="estudiantes" asp-action="ficha" asp-route-id="@item.PersonID">@item.PersonID</a></td>
+                    <td><a asp-controller="Estudiantes" asp-action="Ficha" asp-route-id="@item.PersonID">@item.PersonID</a></td>
                     <td>@item.FirstName</td>
                     <td>@item.LastName</td>
                     <td>@item.EnrollmentDate.GetValueOrDefault().ToShortDateString()</td>
