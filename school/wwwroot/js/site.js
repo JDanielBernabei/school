@@ -14,11 +14,6 @@
                 OnLoad: function() {
                     App.Core.CreateTable("estudiantes");
                 }
-            },
-            Details:{
-                OnLoad: function() {
-                    App.Core.CreateTable("estudiantes");
-                }
             }
         }
     }
