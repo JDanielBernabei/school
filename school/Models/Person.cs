@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -14,7 +15,9 @@ namespace School.Models
         }
 
         public int PersonID { get; set; }
+        [Required()]
         public string LastName { get; set; }
+        [Required()]
         public string FirstName { get; set; }
         public DateTime? HireDate { get; set; }
         public DateTime? EnrollmentDate { get; set; }

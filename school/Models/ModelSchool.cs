@@ -25,7 +25,7 @@ namespace School.Models
         public virtual DbSet<OnsiteCourse> OnsiteCourses { get; set; }
         public virtual DbSet<Person> People { get; set; }
         public virtual DbSet<StudentGrade> StudentGrades { get; set; }
-
+/*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -34,6 +34,7 @@ namespace School.Models
                 optionsBuilder.UseSqlServer("Server=localhost;Database=School;Trusted_Connection=True;");
             }
         }
+*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
